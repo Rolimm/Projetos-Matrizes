@@ -8,7 +8,7 @@ int main() {
 	printf("Preciso que voce digite 4 numeros pares abaixo de 11 e 4 numeros impares acima de 11,\nCaso contrario ira dar erro\n\n");
 	for(i=0;i<=1;i++){
 		for(j=0;j<=3;j++){
-				printf("Digite um numero par:\n");
+				printf("Digite um numero:\n");
 		        scanf("%d",&matriz[i][j]);	
 
 		        if(matriz[i][j]==0 || matriz[i][j]>=21){
@@ -57,15 +57,15 @@ int main() {
             }
         }
 			
-		printf("\nAqui está a primeira matriz:\n");	
-		for (i = 0; i < 2; i++) {
+		printf("\nAqui estÃ¡ a primeira matriz:\n");	
+	for (i = 0; i < 2; i++) {
             for (j = 0; j < 4; j++) {
                 printf("%d ", matriz[i][j]);
             }
             printf("\n");
         }
         
-                for (i = 0; i < 2; i++) {
+       for (i = 0; i < 2; i++) {
             for (j = 0; j < 4; j++) {
                 if ((i == 1 && matriz[i][j] % 2 != 0) || (i == 0 && matriz[i][j] % 2 == 0)) {
                     aux = matriz[0][j];
@@ -74,7 +74,7 @@ int main() {
                 }
             }
         }
-        printf("\nAqui está a segunda matriz:\n");
+        printf("\nAqui estÃ¡ a segunda matriz:\n");
         for (i = 0; i < 2; i++) {
             for (j = 0; j < 4; j++) {
                 printf("%d ", matriz[i][j]);
@@ -87,13 +87,13 @@ int main() {
 	}else{
 		if(par>4){
 			printf("\nErro");
-			printf("\nvocê digitou mais de 4 pares: %d pares e seus impare foram: %d",par,impar);
+			printf("\nvocÃª digitou mais de 4 pares: %d pares e seus impare foram: %d",par,impar);
 		}else if(impar>4){
 			printf("\nErro");
-			printf("\nVocê digitou mais de 4 numeros impares: %d impares e seus pares foram %d",impar,par);
+			printf("\nVocÃª digitou mais de 4 numeros impares: %d impares e seus pares foram %d",impar,par);
 		}else{
 			printf("\nErro");
-			printf("\nOs numeros que foram digitados pares ou impares \nEstão fora do padrão de par menor que 11 e impar maior ou igual a 11");
+			printf("\nOs numeros que foram digitados pares ou impares \nEstÃ£o fora do padrÃ£o de par menor que 11 e impar maior ou igual a 11");
 		}
 		return 0;
 	}	
